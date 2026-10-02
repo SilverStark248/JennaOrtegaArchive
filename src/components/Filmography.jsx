@@ -12,7 +12,7 @@ export default function FilmographyOnline() {
     const haystack = `${item.title} ${item.role} ${item.year}`.toLowerCase();
     return matchesType && haystack.includes(query.toLowerCase());
   }), [filter, query]);
-  return <section className="online-section" id="filmography-online">
+  return <section className="online-section" id="filmography">
     <div className="online-heading"><span>03 / FILMOGRAPHY</span><h2>THE <em>WORK</em></h2><p>Career credits cross-checked against current public filmography databases.</p></div>
     <div className="online-controls">
       <div className="online-filters">{filters.map((f) => <button key={f} className={filter === f ? 'active' : ''} onClick={() => setFilter(f)}>{f}</button>)}</div>
