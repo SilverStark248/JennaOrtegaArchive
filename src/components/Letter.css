@@ -1,0 +1,107 @@
+.letter-section {
+  position: relative;
+  padding: 150px 7vw 110px;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(141, 44, 52, 0.14), transparent 34%),
+    #090909;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.letter-kicker {
+  font: 500 11px/1 'DM Mono', monospace;
+  letter-spacing: .22em;
+  color: var(--accent-light);
+  margin-bottom: 70px;
+}
+
+.letter-wrap {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+  gap: 9vw;
+}
+
+.letter-title-block > span {
+  display: block;
+  font: 500 10px/1.4 'DM Mono', monospace;
+  letter-spacing: .18em;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+}
+
+.letter-title-block h2 {
+  margin: 0;
+  font: 700 clamp(52px, 7vw, 105px)/.88 Inter, sans-serif;
+  letter-spacing: -.07em;
+  text-transform: uppercase;
+}
+
+.letter-title-block h2 em {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -.04em;
+  color: #d8cbc5;
+}
+
+.letter-copy {
+  max-width: 700px;
+  font: 400 16px/1.9 Inter, sans-serif;
+  color: #aaa;
+}
+
+.letter-copy p {
+  margin: 0 0 27px;
+}
+
+.letter-copy .letter-salutation {
+  color: var(--text);
+  font: 400 26px/1.3 'Bodoni Moda', serif;
+  margin-bottom: 35px;
+}
+
+.letter-emphasis {
+  color: var(--text);
+  font-size: clamp(21px, 2.3vw, 31px);
+  line-height: 1.45;
+  letter-spacing: -.025em;
+  border-left: 1px solid var(--accent);
+  padding-left: 24px;
+  margin: 48px 0 42px !important;
+}
+
+.letter-signoff {
+  color: #ddd;
+  padding-top: 20px;
+}
+
+.letter-signoff span {
+  color: #777;
+  font: 11px/1.6 'DM Mono', monospace;
+  letter-spacing: .08em;
+}
+
+.letter-back-top {
+  margin: 90px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 0;
+  color: #777;
+  cursor: pointer;
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: .16em;
+}
+
+.letter-back-top:hover { color: var(--text); }
+
+.letter-back-icon { transform: rotate(180deg); }
+
+@media (max-width: 800px) {
+  .letter-section { padding: 100px 6vw 80px; }
+  .letter-kicker { margin-bottom: 50px; }
+  .letter-wrap { grid-template-columns: 1fr; gap: 55px; }
+  .letter-copy { font-size: 15px; line-height: 1.8; }
+}
